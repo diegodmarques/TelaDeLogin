@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.form-input {
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 12px;
+    outline: none;
+    border: 1px rgb(255, 255, 255) solid;
+    background-color: rgba(47, 33, 90, 0.04);
+    color: #0d0c22;
+    /* box-shadow: inset -3px 2px 7px 1px rgba(167, 167, 167, 0.23); */
+    transition: box-shadow 300ms ease, background 300ms ease, border 300ms ease-in-out;
+}
+
+.form-input:hover {
+    border-color: rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    box-shadow: inset -3px 2px 7px 1px rgba(167, 167, 167, 0.23), 0 0 0 4px rgba(14 148 155 / 10%);  
+}
+
+.form-input:focus {
+    border: black;
+    border: 0.1px solid rgba(52, 177, 184, 0.5);
+    background-color: #fff;
+    box-shadow: inset -3px 2px 7px 1px rgba(167, 167, 167, 0.23), 0 0 0 4px rgba(14 148 155 / 20%);
+}
+
+.form-input:active {
+    box-shadow: inset -3px 2px 7px 1px rgba(167, 167, 167, 0.23), 0 0 0 0.5px rgba(14, 148, 155, 50%);
+}
+
+input[type="password"] {
+    color: rgba(52, 177, 184, 1);
+}
+
+.position-relative-up {
+    position: relative;
+    bottom: 15px;
+}
+.position-relative-down {
+    position: relative;
+    top: 10px;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.flex-column-between {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.flex-content-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-items-center {
+    display: flex;
+    align-items: center;
+}
+
+.flex-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex-row-reverse {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+#container {
+    background: #2F215A;
+    background: linear-gradient(to bottom right, #4C999E, #2F215A);
+    background-size: 200% 400%;
+    height: 100vh;
+    animation: gradient 10s ease infinite;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 60%;
+    height: 80%;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 6px 6px 12px 1px rgba(0, 0, 0, 0.23);
+}
+
+.card-alt {
+    padding: 20px;
+    background-image: url(/images/fogute.jpg);
+    background-size: cover;
+    background-origin: border-box;
+    background-repeat: no-repeat;
+    background-position: -100px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    transition: all 1s ease-in-out;   
+}
+
+.card-alt:hover {
+    background-position: -350px;
+    transform: scale(1.1);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    box-shadow: 6px 6px 12px 1px rgba(0, 0, 0, 0.23);
+}
+
+#btn {
+    padding: 15px;
+    border-radius: 12px;
+    width: 100%;
+    background: linear-gradient(to bottom right, #4C999E, #2F215A);
+    background-size: 200% 200%;
+    color: white;  
+    border: none;
+    box-shadow: 6px 6px 8px 1px rgba(0, 0, 0, 0.15);
+    transition: 200ms;
+    animation: colors-out 200ms ease-in reverse;
+}
+
+#btn:hover {
+    cursor: pointer;
+    position: relative;
+    animation: colors-in 300ms ease-in;
+    animation-fill-mode: forwards;
+}
+
+#btn:active {
+    transform: scale(0.95);
+    box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, 0.23);
+
+}
+
+#form {
+    height: 80%;
+    width: 70%;
+}
+
+#checkbox {
+    margin-right: 5px;
+    position: relative;
+    cursor: pointer;
+}
+
+label{
+    font-size: smaller;
+}
+
+#label {
+    font-size: x-small;
+}
+
+.font-bold {
+    font-weight: 700;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.link {
+    font-size: x-small;
+    color: #206368;
+}
+
+.phrase {
+    font-size: xxx-large;
+    font-weight: bolder;
+    color: white;
+    padding: 20px;
+    width: 200px;
+    transition: 200ms;
+    text-shadow: 4px 4px 2px rgb(21, 90, 87)
+}
+
+@keyframes colors-in {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 0%;
+    }
+    100% {
+        background-position: 50% 100%;
+    }
+}
+
+@keyframes colors-out {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 0%;
+    }
+    100% {
+        background-position: 50% 100%;
+    }
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <title>Sign In</title>
+</head>
+
+<body>
+    <div id="container" class="flex-content-center">
+
+        <div class="cards">
+
+            <div class="login flex-content-center">
+                <form action="/produtos" id="form" class="flex-column">
+                    <h2 class="position-relative-up">Login to Your Account</h2>
+                    <div class="flex-column ">
+                        <label for="e-mail" class="font-bold">Username or Email Address</label>
+                        <input class="form-input" type="email" name="email" id="e-mail" placeholder="" autocomplete="off" required>
+                    </div>
+                    <div class="flex-column position-relative-up">
+                        <div class="flex-between flex-items-center">
+                            <label for="senha" class="font-bold">Password</label>
+                            <a href="#" class="link font-bold">Forgot Password?</a>
+                        </div>
+                        <input class="form-input" type="password" name="senha" id="senha" placeholder="" required>
+                        <div class="flex-items-center">
+                            <input type="checkbox" name="" id="checkbox">
+                            <span id="label">Show Password?</span>
+                        </div>
+                    </div>
+                    <button id="btn" class="position-relative-down">Sign In</button>
+                </form>
+            </div>
+
+            <div class="card-alt flex-column-between">
+                <p class="phrase">Make Your Dream.</p>
+                <span id="label"> Don't have an account? <a class="link font-bold" href="/singUp.html">Sign Up</a></span>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="/script.js"></script>
+
+</body>
+
+</html>
