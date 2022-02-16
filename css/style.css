@@ -32,9 +32,9 @@
     box-shadow: inset -3px 2px 7px 1px rgba(167, 167, 167, 0.23), 0 0 0 0.5px rgba(14, 148, 155, 50%);
 }
 
-input[type="password"] {
+/* input[type="password"] {
     color: rgba(52, 177, 184, 1);
-}
+} */
 
 .position-relative-up {
     position: relative;
