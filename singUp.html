@@ -19,35 +19,42 @@
 
             <div class="login flex-content-center">
                 <form action="/produtos" id="form" class="flex-column">
-                    <h2 class="position-relative-up">Login to Your Account</h2>
-                    <div class="flex-column ">
-                        <label for="e-mail" class="font-bold">Username or Email Address</label>
-                        <input class="form-input" type="email" name="email" id="e-mail" placeholder="" autocomplete="off" required>
+                    <h2 class="position-relative-up">Welcome to Oliveira Trade!</h2>
+                    <div class="flex-column">
+                        <label for="name" class="font-bold">Name</label>
+                        <input class="form-input" type="text" name="name" id="name" placeholder="" autocomplete="off" required>
+                        <label for="cpf" class="font-bold" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" title="xxx.xxx.xxx-xx">CPF</label>
+                        <input class="form-input" type="text" name="" id="cpf" placeholder="" autocomplete="off" minlength="11" maxlength="14" required>
+                        <label for="email" class="font-bold">E-mail</label>
+                        <input class="form-input" type="email" name="" id="email" placeholder="" autocomplete="off" required>
                     </div>
-                    <div class="flex-column position-relative-up">
-                        <div class="flex-between flex-items-center">
-                            <label for="senha" class="font-bold">Password</label>
-                            <a href="#" class="link font-bold">Forgot Password?</a>
-                        </div>
-                        <input class="form-input" type="password" name="senha" id="senha" placeholder="" required>
-                        <div class="flex-items-center">
-                            <input type="checkbox" name="" id="checkbox">
-                            <span id="label">Show Password?</span>
-                        </div>
-                    </div>
-                    <button id="btn" class="position-relative-down">Sign In</button>
-                </form>
+
+
             </div>
 
-            <div class="card-alt flex-column-between">
-                <p class="phrase">Make Your Dream.</p>
-                <span id="label"> Don't have an account? <a class="link font-bold" href="/index.html">Sign In</a></span>
+            <div class=" margin flex-column-around">
+                <div class=" flex-column">
+                    <label for="password" class="font-bold">Password</label>
+                    <input class="form-input" type="password" name="" id="password" placeholder="8 Characters" autocomplete="off" minlength="8" required>
+                    <label for="cpassword" class="font-bold">Confirm Password</label>
+                    <input class="form-input " type="password" name="" id="cpassword" placeholder="" autocomplete="off" minlength="8" required>
+                    <div class="flex-items-center flex-content-center">
+                        <input type="checkbox" name="" id="checkbox" required>
+                        <span id="label">I agree to the <font color=blue >Terms of Service</font> and <font color=blue >Privacy Policy</font></span>
+                    </div>
+                </div>
+
+                <button type="submit" id="btn" class="position-relative-down">Create Account</button>
+                <span id="label" class="flex-end">Already a member? <a class="link font-bold " href="/index.html ">&nbsp;Sign In</a></span>
+
             </div>
+            </form>
+
         </div>
 
     </div>
 
-    <script src="/script.js"></script>
+    <script src="script.js "></script>
 
 </body>
 

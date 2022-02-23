@@ -18,25 +18,29 @@
 
         <div class="cards">
 
-            <div class="login flex-content-center">
+            <div class="flex-content-center ">
                 <form action="/produtos" id="form" class="flex-column">
                     <h2 class="position-relative-up">Login to Your Account</h2>
                     <div class="flex-column ">
-                        <label for="e-mail" class="font-bold">Username or Email Address</label>
+                        <label for="e-mail" class="font-bold">Email Address</label>
                         <input class="form-input" type="email" name="email" id="e-mail" placeholder="" autocomplete="off" required>
-                    </div>
-                    <div class="flex-column position-relative-up">
-                        <div class="flex-between flex-items-center">
-                            <label for="senha" class="font-bold">Password</label>
-                            <a href="#" class="link font-bold">Forgot Password?</a>
+
+
+                        <div class="flex-column">
+                            <div class="flex-items-center flex-between">
+                                <label for="senha" class="font-bold">Password</label>
+                                <a href="#" class="link font-bold">Forgot Password?</a>
+                            </div>
+                            <input class="form-input" type="password" name="senha" id="senha" placeholder="" required>
+
                         </div>
-                        <input class="form-input" type="password" name="senha" id="senha" placeholder="" required>
                         <div class="flex-items-center">
                             <input type="checkbox" name="" id="checkbox">
                             <span id="label">Show Password?</span>
                         </div>
+
                     </div>
-                    <button id="btn" class="position-relative-down">Sign In</button>
+                    <button id="btn" type="submit" class="position-relative-down">Log In</button>
                 </form>
             </div>
 
@@ -44,6 +48,7 @@
                 <p class="phrase">Make Your Dream.</p>
                 <span id="label"> Don't have an account? <a class="link font-bold" href="/singUp.html">Sign Up</a></span>
             </div>
+
         </div>
 
     </div>

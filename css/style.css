@@ -4,8 +4,8 @@
 }
 
 .form-input {
-    padding: 15px;
-    margin: 10px 0;
+    padding: 12px;
+    margin: 5px 0 20px;
     border-radius: 12px;
     outline: none;
     border: 1px rgb(255, 255, 255) solid;
@@ -15,22 +15,48 @@
     transition: box-shadow 300ms ease, background 300ms ease, border 300ms ease-in-out;
 }
 
+.form-input::placeholder {
+    font-size: xx-small;
+    transition: 500ms;
+    position: relative;
+    bottom: 0;
+}
+
 .form-input:hover {
     border-color: rgba(0, 0, 0, 0.1);
     background-color: #fff;
-    box-shadow: inset -3px 2px 7px 1px rgba(167, 167, 167, 0.23), 0 0 0 4px rgba(14 148 155 / 10%);  
+    box-shadow: inset -3px 2px 7px 1px rgba(167, 167, 167, 0.23), 0 0 0 4px rgba(14 148 155 / 10%);
 }
 
 .form-input:focus {
-    border: black;
     border: 0.1px solid rgba(52, 177, 184, 0.5);
     background-color: #fff;
     box-shadow: inset -3px 2px 7px 1px rgba(167, 167, 167, 0.23), 0 0 0 4px rgba(14 148 155 / 20%);
 }
 
+.form-input:valid {
+    border: 1.5px solid rgba(52, 177, 184, 0.5);
+    background-color: #fff;
+    /* box-shadow: inset -3px 2px 7px 1px rgba(167, 167, 167, 0.23), 0 0 0 4px rgba(14 148 155 / 20%); */
+}
+
+
+/* .form-input:invalid { */
+
+
+/* border: 1px solid rgba(247, 7, 7, 0.5);
+    background-color: #fff; */
+
+
+/* box-shadow: inset -3px 2px 7px 1px rgba(167, 167, 167, 0.23), 0 0 0 4px rgba(14 148 155 / 20%); */
+
+
+/* } */
+
 .form-input:active {
     box-shadow: inset -3px 2px 7px 1px rgba(167, 167, 167, 0.23), 0 0 0 0.5px rgba(14, 148, 155, 50%);
 }
+
 
 /* input[type="password"] {
     color: rgba(52, 177, 184, 1);
@@ -40,6 +66,7 @@
     position: relative;
     bottom: 15px;
 }
+
 .position-relative-down {
     position: relative;
     top: 10px;
@@ -57,6 +84,18 @@
     justify-content: space-between;
 }
 
+.flex-column-around {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.flex-column-end {
+    display: flex;
+    flex-direction: column;
+    justify-content: s;
+}
+
 .flex-content-center {
     display: flex;
     justify-content: center;
@@ -66,6 +105,16 @@
 .flex-items-center {
     display: flex;
     align-items: center;
+}
+
+.flex-around {
+    display: flex;
+    justify-content: space-around;
+}
+
+.flex-end {
+    display: flex;
+    justify-content: end;
 }
 
 .flex-between {
@@ -99,14 +148,14 @@
 
 .card-alt {
     padding: 20px;
-    background-image: url(/images/fogute.jpg);
+    background-image: url(../images/fogute.jpg);
     background-size: cover;
     background-origin: border-box;
     background-repeat: no-repeat;
     background-position: -100px;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
-    transition: all 1s ease-in-out;   
+    transition: all 1s ease-in-out;
 }
 
 .card-alt:hover {
@@ -117,13 +166,32 @@
     box-shadow: 6px 6px 12px 1px rgba(0, 0, 0, 0.23);
 }
 
+.card-alt_bg {
+    /* margin: 20px; */
+    background-image: url(../images/fogute.jpg);
+    background-size: cover;
+    background-origin: border-box;
+    background-repeat: no-repeat;
+    background-position: -100px;
+    border-radius: 20px;
+    transition: all 1s ease-in-out;
+}
+
+.margin {
+    padding: 40px;
+}
+
+.color-white {
+    color: white;
+}
+
 #btn {
-    padding: 15px;
+    padding: 12px;
     border-radius: 12px;
     width: 100%;
     background: linear-gradient(to bottom right, #4C999E, #2F215A);
     background-size: 200% 200%;
-    color: white;  
+    color: white;
     border: none;
     box-shadow: 6px 6px 8px 1px rgba(0, 0, 0, 0.15);
     transition: 200ms;
@@ -140,12 +208,11 @@
 #btn:active {
     transform: scale(0.95);
     box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, 0.23);
-
 }
 
 #form {
     height: 80%;
-    width: 70%;
+    width: 80%;
 }
 
 #checkbox {
@@ -154,7 +221,7 @@
     cursor: pointer;
 }
 
-label{
+label {
     font-size: smaller;
 }
 
@@ -168,9 +235,6 @@ label{
 
 .link {
     text-decoration: none;
-}
-
-.link {
     font-size: x-small;
     color: #206368;
 }
